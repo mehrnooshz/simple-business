@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Business should be rendered and it should match the expected snapshot 1`] = `
+<div
+  className="business-container"
+>
+  <div
+    className="container"
+  />
+</div>
+`;

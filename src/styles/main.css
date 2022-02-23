@@ -1,0 +1,126 @@
+
+/* business list */
+  .responsive-table {
+   overflow: auto;
+   max-height: 500px;
+
+  }
+  .responsive-table li {
+     padding: 25px 30px;
+    justify-content: stretch;
+   
+  }
+  .responsive-table .table-row:hover {
+    background-color: #f4f4f5;
+  }
+  .responsive-table::-webkit-scrollbar {
+    width:8px;  
+    background: transparent;
+    height: 5px;
+  }
+  .responsive-table .title{
+      color: #da0a83;
+      font-weight: 700;
+  }
+  /* Track */
+  .responsive-table::-webkit-scrollbar-track {
+    background: transparent;
+    height: 5px;
+    border-right: 2px solid #bfbfbf;
+    border-left: 1px solid #f6f6f6;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  /* Handle */
+  .responsive-table::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 5px;
+    height: 5px;
+
+  }
+  .responsive-table .table-header {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .responsive-table .table-row {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+/* detail business */
+  .img-container img{
+    flex-basis: 100%;
+    width: 100%;
+    max-height: 300px;
+ 
+  }
+  .info-container{
+    margin-top: 30px;
+  }
+
+  .info-container .near-places{
+   padding: 20px;
+      }
+
+
+  .info-container .address-contact{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    justify-content: space-evenly;
+      }
+  .info-container .title{
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #656565;
+      }
+  .info-container .description{
+    color: #afabab;
+    font-size: 16px;
+    margin-bottom: 3px;
+      }
+
+.near-places ul{
+  list-style: none;
+}
+.near-places ul li{
+  padding: 12px;
+  background-color: #f8f8fa;
+  margin-bottom: 5px;
+}
+
+
+ /* Mobile   */
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+ 
+  .responsive-table .col-3, .responsive-table .col-7{
+    flex-basis: 100%;
+    width: 100%;
+  }
+ 
+  .responsive-table .table-row div:before {
+    color: #da0a83;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+
+  .info-container{
+    flex-direction: column;
+  }
+  .info-container .col-5 {
+    width: 100%;
+    flex-basis: 100%;
+  
+   
+}
+}  
+         
